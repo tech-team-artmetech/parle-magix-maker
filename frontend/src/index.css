@@ -1,28 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Inter", sans-serif;
-  --background: #fdfdfd;
+  /* font-family: "Inter", sans-serif; */
+  --background: #0361d8;
   --foreground: #484d56;
   --primary: #5a68cf;
   --primary-foreground: #fafafa;
 
-  /* Shades of primary color */
-
-  --brand-primary-25: #f7f8fd;
-  --brand-primary-50: #eff0fa;
-  --brand-primary-100: #e3e6f7;
-  --brand-primary-200: #d0d3f1;
-  --brand-primary-300: #a8afe6;
-  --brand-primary-400: #818bda;
-  --brand-primary-500: #5a68cf;
-  --brand-primary-600: #3747be;
-  --brand-primary-700: #2c3896;
-  --brand-primary-800: #222d77;
-  --brand-primary-900: #171e4f;
-  --brand-primary-950: #12183f;
-
-  /* neutrals */
   --neutral-25: #fdfdfd;
   --neutral-50: #fafafa;
   --neutral-100: #f5f5f5;
@@ -38,6 +22,8 @@
 
   /* Letter spacing */
   --letter-spacing-md: -3%;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-inter: "Inter", sans-serif;
 }
 @theme {
   --color-background: var(--background);
@@ -76,8 +62,11 @@
   --color-neutral-950: var(--neutral-950);
 
   --tracking-md: var(--letter-spacing-md);
+
+  --font-inter: var(--font-inter);
+  --font-roboto-mono: var(--font-roboto-mono);
 }
 
 body {
-  @apply selection:bg-primary selection:text-background;
+  @apply selection:bg-primary selection:text-background font-roboto-mono;
 }
