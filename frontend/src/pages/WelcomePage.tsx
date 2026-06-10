@@ -44,6 +44,9 @@ export const WelcomePage = () => {
         <div className="pt-9">
           <img src="assets/magix_makes_magical.png" />
         </div>
+        <div className="bg-white font-bold text-[#0F3560] max-w-[250px] rounded-md w-full text-center py-2 mt-12 px-8">
+          <button>Start Creating</button>
+        </div>
       </div>
     </div>
   );
